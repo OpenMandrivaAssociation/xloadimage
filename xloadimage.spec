@@ -40,6 +40,8 @@ BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(libpng)
 BuildRequires:	pkgconfig(libjpeg)
 BuildRequires:	pkgconfig(ice)
+Obsoletes:  xli < 20061110-21
+Provides: xli = 20061110-21
 
 %description
 Xloadimage is a utility which will view many different types of images 
