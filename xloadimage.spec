@@ -89,7 +89,7 @@ chmod +x configure
 
 %build
 %configure
-make_build
+%make_build
 
 %install
 # First, the binaries:
