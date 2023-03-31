@@ -1,7 +1,7 @@
 Name:		xloadimage
 Summary: 	Image viewer and processor
 Version:	4.1
-Release:	1
+Release:	2
 License:	MIT
 Group:		Graphics
 URL:		http://www.frostbytes.com/~jimf/xloadimage.html
