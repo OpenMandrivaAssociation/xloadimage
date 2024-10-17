@@ -4,7 +4,7 @@ Version:	4.1
 Release:	2
 License:	MIT
 Group:		Graphics
-URL:		http://www.frostbytes.com/~jimf/xloadimage.html
+URL:		https://www.frostbytes.com/~jimf/xloadimage.html
 Source0:	ftp://ftp.x.org/R5contrib/%{name}.%{version}.tar.gz
 # Patches 0-18 come from Debian 4.1-16.1
 # Many thanks to all those who have done work on this package over the years
