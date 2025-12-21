@@ -35,6 +35,11 @@ Patch23:	xloadimage-4.1-png-1.5.patch
 Patch24:	xloadimage-4.1-fix-mem-leak.patch
 Patch25:	xloadimage-4.1-sub-second-delay.patch
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pkgconfig(libtiff-4)
 BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(libpng)
