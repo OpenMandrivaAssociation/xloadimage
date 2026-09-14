@@ -37,7 +37,6 @@ Patch25:	xloadimage-4.1-sub-second-delay.patch
 
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	libtool-base
 BuildRequires:	slibtool
 BuildRequires:	make
 BuildRequires:	pkgconfig(libtiff-4)
@@ -62,37 +61,13 @@ and image merging. When applicable, these options are done automatically
 dithered automatically). 
 
 %prep
-%setup -q -n %{name}.%{version}
-%patch0 -p1
-%patch1 -p1
-%patch2 -p1
-%patch3 -p1
-%patch4 -p1
-%patch5 -p1
-%patch6 -p1
-%patch7 -p1
-%patch8 -p1
-%patch9 -p1
-%patch10 -p1
-%patch11 -p1
-%patch12 -p1
-%patch13 -p1
-%patch14 -p1
-%patch15 -p1
-%patch16 -p1
-%patch17 -p1
-%patch18 -p1
-%patch19 -p1
-%patch20 -p1
-%patch21 -p1 -b .png-pkg-config
-%patch22 -p1 -b .tiff4
-%patch23 -p1 -b .png15
-%patch24 -p1 -b .fix-mem-leak
-%patch25 -p1 -b .sub-second-delay
+%autosetup -p1 -n %{name}.%{version}
 
 chmod +x configure
 
 %build
+# 1993 K&R sources: implicit int, old prototypes
+export CFLAGS="%{optflags} -std=gnu89 -Wno-implicit-int -Wno-incompatible-pointer-types -Wno-int-conversion -Wno-deprecated-non-prototype"
 %configure
 %make_build
 
